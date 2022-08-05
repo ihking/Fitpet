@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F50B8932892600300A69B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8922892600300A69B64 /* AppDelegate.swift */; };
+		2F50B8952892600300A69B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8942892600300A69B64 /* SceneDelegate.swift */; };
+		2F50B89C2892600500A69B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F50B89B2892600500A69B64 /* Assets.xcassets */; };
+		2F50B89F2892600500A69B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F50B89D2892600500A69B64 /* LaunchScreen.storyboard */; };
+		2F50B8AA2892600500A69B64 /* FitpetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8A92892600500A69B64 /* FitpetTests.swift */; };
+		2F50B8B42892600500A69B64 /* FitpetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8B32892600500A69B64 /* FitpetUITests.swift */; };
+		2F50B8B62892600500A69B64 /* FitpetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8B52892600500A69B64 /* FitpetUITestsLaunchTests.swift */; };
+		2F50B8CD28936F7B00A69B64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B8CC28936F7B00A69B64 /* MainViewController.swift */; };
+		2F72D292289370D900F4E8F8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72D291289370D900F4E8F8 /* MainViewModel.swift */; };
+		2F72D294289373BE00F4E8F8 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72D293289373BE00F4E8F8 /* ViewModelType.swift */; };
+		2F72D29728937A4F00F4E8F8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72D29628937A4F00F4E8F8 /* Const.swift */; };
+		2F72D2A32893ACE500F4E8F8 /* Ex+Rx+LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72D2A22893ACE500F4E8F8 /* Ex+Rx+LifeCycle.swift */; };
+		2F9288C62893DBCB00AFA91C /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9288C52893DBCB00AFA91C /* DB.swift */; };
+		2FA597802897D9BB0036B360 /* BaseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5977F2897D9BB0036B360 /* BaseTVCell.swift */; };
+		2FA597822898B3390036B360 /* Ex+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA597812898B3390036B360 /* Ex+Array.swift */; };
+		2FA597842898C4860036B360 /* Ex+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA597832898C4860036B360 /* Ex+UIFont.swift */; };
+		2FA59788289908310036B360 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA59787289908310036B360 /* Ex+Date.swift */; };
+		2FA5978A289A26E80036B360 /* MainViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA59789289A26E80036B360 /* MainViewControllerSpec.swift */; };
+		2FA5978C289B72DE0036B360 /* Ex+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5978B289B72DE0036B360 /* Ex+Double.swift */; };
+		33F590CA5FF94EB00AB8645F /* Pods_Fitpet_FitpetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB14F241A6389433AF9FE8 /* Pods_Fitpet_FitpetTests.framework */; };
+		62041CC6A555BB90184CE874 /* Pods_Fitpet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AAD0FCE26F155F5FC46D96 /* Pods_Fitpet.framework */; };
+		69B605F7289834CB00BC1A1A /* ReUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B605F6289834CB00BC1A1A /* ReUsable.swift */; };
+		69B605F92898357A00BC1A1A /* Ex+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B605F82898357A00BC1A1A /* Ex+UITableView.swift */; };
+		69B605FB2898463F00BC1A1A /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B605FA2898463F00BC1A1A /* Ex+String.swift */; };
+		69B605FD2898501400BC1A1A /* Ex+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B605FC2898501400BC1A1A /* Ex+Decodable.swift */; };
+		69B60600289973BB00BC1A1A /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B605FF289973BB00BC1A1A /* MainViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F50B8A62892600500A69B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F50B8872892600300A69B64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F50B88E2892600300A69B64;
+			remoteInfo = Fitpet;
+		};
+		2F50B8B02892600500A69B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F50B8872892600300A69B64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F50B88E2892600300A69B64;
+			remoteInfo = Fitpet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F50B88F2892600300A69B64 /* Fitpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F50B8922892600300A69B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F50B8942892600300A69B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F50B89B2892600500A69B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F50B89E2892600500A69B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F50B8A02892600500A69B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F50B8A52892600500A69B64 /* FitpetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitpetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F50B8A92892600500A69B64 /* FitpetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitpetTests.swift; sourceTree = "<group>"; };
+		2F50B8AF2892600500A69B64 /* FitpetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitpetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F50B8B32892600500A69B64 /* FitpetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitpetUITests.swift; sourceTree = "<group>"; };
+		2F50B8B52892600500A69B64 /* FitpetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitpetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F50B8CC28936F7B00A69B64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F72D291289370D900F4E8F8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2F72D293289373BE00F4E8F8 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		2F72D29628937A4F00F4E8F8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		2F72D2A22893ACE500F4E8F8 /* Ex+Rx+LifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Rx+LifeCycle.swift"; sourceTree = "<group>"; };
+		2F9288C52893DBCB00AFA91C /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		2FA5977F2897D9BB0036B360 /* BaseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTVCell.swift; sourceTree = "<group>"; };
+		2FA597812898B3390036B360 /* Ex+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Array.swift"; sourceTree = "<group>"; };
+		2FA597832898C4860036B360 /* Ex+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIFont.swift"; sourceTree = "<group>"; };
+		2FA59787289908310036B360 /* Ex+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
+		2FA59789289A26E80036B360 /* MainViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerSpec.swift; sourceTree = "<group>"; };
+		2FA5978B289B72DE0036B360 /* Ex+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Double.swift"; sourceTree = "<group>"; };
+		5A7DB6D5397DDA910DFAC0D6 /* Pods-Fitpet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitpet.release.xcconfig"; path = "Target Support Files/Pods-Fitpet/Pods-Fitpet.release.xcconfig"; sourceTree = "<group>"; };
+		69B605F6289834CB00BC1A1A /* ReUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReUsable.swift; sourceTree = "<group>"; };
+		69B605F82898357A00BC1A1A /* Ex+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UITableView.swift"; sourceTree = "<group>"; };
+		69B605FA2898463F00BC1A1A /* Ex+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
+		69B605FC2898501400BC1A1A /* Ex+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Decodable.swift"; sourceTree = "<group>"; };
+		69B605FF289973BB00BC1A1A /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		83AAD0FCE26F155F5FC46D96 /* Pods_Fitpet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitpet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C7A0CAFF7459FD16D4AF28 /* Pods-Fitpet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitpet.debug.xcconfig"; path = "Target Support Files/Pods-Fitpet/Pods-Fitpet.debug.xcconfig"; sourceTree = "<group>"; };
+		EDA8D285DDB78D760E15C0A5 /* Pods-Fitpet-FitpetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitpet-FitpetTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitpet-FitpetTests/Pods-Fitpet-FitpetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE7F4EDAAD44D800005D385 /* Pods-Fitpet-FitpetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitpet-FitpetTests.release.xcconfig"; path = "Target Support Files/Pods-Fitpet-FitpetTests/Pods-Fitpet-FitpetTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCAB14F241A6389433AF9FE8 /* Pods_Fitpet_FitpetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitpet_FitpetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F50B88C2892600300A69B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62041CC6A555BB90184CE874 /* Pods_Fitpet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8A22892600500A69B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F590CA5FF94EB00AB8645F /* Pods_Fitpet_FitpetTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8AC2892600500A69B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F50B8862892600300A69B64 = {
+			isa = PBXGroup;
+			children = (
+				2F50B8912892600300A69B64 /* Fitpet */,
+				2F50B8A82892600500A69B64 /* FitpetTests */,
+				2F50B8B22892600500A69B64 /* FitpetUITests */,
+				2F50B8902892600300A69B64 /* Products */,
+				D7EFF49113E1F9A782E778E4 /* Pods */,
+				8EAFE51EDBA37AFB6ED40ED6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F50B8902892600300A69B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F50B88F2892600300A69B64 /* Fitpet.app */,
+				2F50B8A52892600500A69B64 /* FitpetTests.xctest */,
+				2F50B8AF2892600500A69B64 /* FitpetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F50B8912892600300A69B64 /* Fitpet */ = {
+			isa = PBXGroup;
+			children = (
+				2F50B8C32892601700A69B64 /* Model */,
+				2F50B8C928936D0300A69B64 /* View */,
+				2F50B8C22892600F00A69B64 /* ViewModel */,
+				2F72D29528937A4500F4E8F8 /* Helper */,
+				2F50B8922892600300A69B64 /* AppDelegate.swift */,
+				2F50B8942892600300A69B64 /* SceneDelegate.swift */,
+				2F50B89B2892600500A69B64 /* Assets.xcassets */,
+				2F50B89D2892600500A69B64 /* LaunchScreen.storyboard */,
+				2F50B8A02892600500A69B64 /* Info.plist */,
+			);
+			path = Fitpet;
+			sourceTree = "<group>";
+		};
+		2F50B8A82892600500A69B64 /* FitpetTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FA59789289A26E80036B360 /* MainViewControllerSpec.swift */,
+				69B605FF289973BB00BC1A1A /* MainViewModelTests.swift */,
+				69B605FE2899738C00BC1A1A /* Mock */,
+				2F50B8A92892600500A69B64 /* FitpetTests.swift */,
+			);
+			path = FitpetTests;
+			sourceTree = "<group>";
+		};
+		2F50B8B22892600500A69B64 /* FitpetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F50B8B32892600500A69B64 /* FitpetUITests.swift */,
+				2F50B8B52892600500A69B64 /* FitpetUITestsLaunchTests.swift */,
+			);
+			path = FitpetUITests;
+			sourceTree = "<group>";
+		};
+		2F50B8C22892600F00A69B64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F72D291289370D900F4E8F8 /* MainViewModel.swift */,
+				2F72D293289373BE00F4E8F8 /* ViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F50B8C32892601700A69B64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F9288C52893DBCB00AFA91C /* DB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F50B8C928936D0300A69B64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F50B8CC28936F7B00A69B64 /* MainViewController.swift */,
+				2FA5977F2897D9BB0036B360 /* BaseTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F72D29528937A4500F4E8F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2F72D2A12893AC6200F4E8F8 /* extensions */,
+				2F72D29628937A4F00F4E8F8 /* Const.swift */,
+				69B605F6289834CB00BC1A1A /* ReUsable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2F72D2A12893AC6200F4E8F8 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F72D2A22893ACE500F4E8F8 /* Ex+Rx+LifeCycle.swift */,
+				69B605F82898357A00BC1A1A /* Ex+UITableView.swift */,
+				69B605FC2898501400BC1A1A /* Ex+Decodable.swift */,
+				2FA5978B289B72DE0036B360 /* Ex+Double.swift */,
+				2FA597832898C4860036B360 /* Ex+UIFont.swift */,
+				69B605FA2898463F00BC1A1A /* Ex+String.swift */,
+				2FA597812898B3390036B360 /* Ex+Array.swift */,
+				2FA59787289908310036B360 /* Ex+Date.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		69B605FE2899738C00BC1A1A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		8EAFE51EDBA37AFB6ED40ED6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AAD0FCE26F155F5FC46D96 /* Pods_Fitpet.framework */,
+				FCAB14F241A6389433AF9FE8 /* Pods_Fitpet_FitpetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7EFF49113E1F9A782E778E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1C7A0CAFF7459FD16D4AF28 /* Pods-Fitpet.debug.xcconfig */,
+				5A7DB6D5397DDA910DFAC0D6 /* Pods-Fitpet.release.xcconfig */,
+				EDA8D285DDB78D760E15C0A5 /* Pods-Fitpet-FitpetTests.debug.xcconfig */,
+				EFE7F4EDAAD44D800005D385 /* Pods-Fitpet-FitpetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F50B88E2892600300A69B64 /* Fitpet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F50B8B92892600500A69B64 /* Build configuration list for PBXNativeTarget "Fitpet" */;
+			buildPhases = (
+				1264D1245D22EBF2B52E9C29 /* [CP] Check Pods Manifest.lock */,
+				2F50B88B2892600300A69B64 /* Sources */,
+				2F50B88C2892600300A69B64 /* Frameworks */,
+				2F50B88D2892600300A69B64 /* Resources */,
+				DCF6004656DC048DFC2FF700 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fitpet;
+			productName = Fitpet;
+			productReference = 2F50B88F2892600300A69B64 /* Fitpet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F50B8A42892600500A69B64 /* FitpetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F50B8BC2892600500A69B64 /* Build configuration list for PBXNativeTarget "FitpetTests" */;
+			buildPhases = (
+				25C18213E20935010035C3E4 /* [CP] Check Pods Manifest.lock */,
+				2F50B8A12892600500A69B64 /* Sources */,
+				2F50B8A22892600500A69B64 /* Frameworks */,
+				2F50B8A32892600500A69B64 /* Resources */,
+				3CBB8E627D0E7EB722E3DA63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F50B8A72892600500A69B64 /* PBXTargetDependency */,
+			);
+			name = FitpetTests;
+			productName = FitpetTests;
+			productReference = 2F50B8A52892600500A69B64 /* FitpetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F50B8AE2892600500A69B64 /* FitpetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F50B8BF2892600500A69B64 /* Build configuration list for PBXNativeTarget "FitpetUITests" */;
+			buildPhases = (
+				2F50B8AB2892600500A69B64 /* Sources */,
+				2F50B8AC2892600500A69B64 /* Frameworks */,
+				2F50B8AD2892600500A69B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F50B8B12892600500A69B64 /* PBXTargetDependency */,
+			);
+			name = FitpetUITests;
+			productName = FitpetUITests;
+			productReference = 2F50B8AF2892600500A69B64 /* FitpetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F50B8872892600300A69B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2F50B88E2892600300A69B64 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2F50B8A42892600500A69B64 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2F50B88E2892600300A69B64;
+					};
+					2F50B8AE2892600500A69B64 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2F50B88E2892600300A69B64;
+					};
+				};
+			};
+			buildConfigurationList = 2F50B88A2892600300A69B64 /* Build configuration list for PBXProject "Fitpet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F50B8862892600300A69B64;
+			productRefGroup = 2F50B8902892600300A69B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F50B88E2892600300A69B64 /* Fitpet */,
+				2F50B8A42892600500A69B64 /* FitpetTests */,
+				2F50B8AE2892600500A69B64 /* FitpetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F50B88D2892600300A69B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F50B89F2892600500A69B64 /* LaunchScreen.storyboard in Resources */,
+				2F50B89C2892600500A69B64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8A32892600500A69B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8AD2892600500A69B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1264D1245D22EBF2B52E9C29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitpet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25C18213E20935010035C3E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitpet-FitpetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CBB8E627D0E7EB722E3DA63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitpet-FitpetTests/Pods-Fitpet-FitpetTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitpet-FitpetTests/Pods-Fitpet-FitpetTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitpet-FitpetTests/Pods-Fitpet-FitpetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF6004656DC048DFC2FF700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitpet/Pods-Fitpet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitpet/Pods-Fitpet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitpet/Pods-Fitpet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F50B88B2892600300A69B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA597842898C4860036B360 /* Ex+UIFont.swift in Sources */,
+				2FA597822898B3390036B360 /* Ex+Array.swift in Sources */,
+				2FA59788289908310036B360 /* Ex+Date.swift in Sources */,
+				69B605F7289834CB00BC1A1A /* ReUsable.swift in Sources */,
+				2F72D2A32893ACE500F4E8F8 /* Ex+Rx+LifeCycle.swift in Sources */,
+				2FA597802897D9BB0036B360 /* BaseTVCell.swift in Sources */,
+				2F72D292289370D900F4E8F8 /* MainViewModel.swift in Sources */,
+				2FA5978C289B72DE0036B360 /* Ex+Double.swift in Sources */,
+				2F9288C62893DBCB00AFA91C /* DB.swift in Sources */,
+				69B605FB2898463F00BC1A1A /* Ex+String.swift in Sources */,
+				69B605FD2898501400BC1A1A /* Ex+Decodable.swift in Sources */,
+				2F50B8932892600300A69B64 /* AppDelegate.swift in Sources */,
+				2F50B8952892600300A69B64 /* SceneDelegate.swift in Sources */,
+				2F72D29728937A4F00F4E8F8 /* Const.swift in Sources */,
+				2F50B8CD28936F7B00A69B64 /* MainViewController.swift in Sources */,
+				69B605F92898357A00BC1A1A /* Ex+UITableView.swift in Sources */,
+				2F72D294289373BE00F4E8F8 /* ViewModelType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8A12892600500A69B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F50B8AA2892600500A69B64 /* FitpetTests.swift in Sources */,
+				69B60600289973BB00BC1A1A /* MainViewModelTests.swift in Sources */,
+				2FA5978A289A26E80036B360 /* MainViewControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F50B8AB2892600500A69B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F50B8B62892600500A69B64 /* FitpetUITestsLaunchTests.swift in Sources */,
+				2F50B8B42892600500A69B64 /* FitpetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F50B8A72892600500A69B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F50B88E2892600300A69B64 /* Fitpet */;
+			targetProxy = 2F50B8A62892600500A69B64 /* PBXContainerItemProxy */;
+		};
+		2F50B8B12892600500A69B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F50B88E2892600300A69B64 /* Fitpet */;
+			targetProxy = 2F50B8B02892600500A69B64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F50B89D2892600500A69B64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F50B89E2892600500A69B64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F50B8B72892600500A69B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F50B8B82892600500A69B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F50B8BA2892600500A69B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C7A0CAFF7459FD16D4AF28 /* Pods-Fitpet.debug.xcconfig */;
+			buildSettings = {
+				ALTERNATE_OWNER = kyo;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fitpet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = kyo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyo.fitpet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F50B8BB2892600500A69B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7DB6D5397DDA910DFAC0D6 /* Pods-Fitpet.release.xcconfig */;
+			buildSettings = {
+				ALTERNATE_OWNER = kyo;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fitpet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = kyo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyo.fitpet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F50B8BD2892600500A69B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA8D285DDB78D760E15C0A5 /* Pods-Fitpet-FitpetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qualson.test-rn.FitpetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitpet.app/Fitpet";
+			};
+			name = Debug;
+		};
+		2F50B8BE2892600500A69B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE7F4EDAAD44D800005D385 /* Pods-Fitpet-FitpetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qualson.test-rn.FitpetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitpet.app/Fitpet";
+			};
+			name = Release;
+		};
+		2F50B8C02892600500A69B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qualson.test-rn.FitpetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitpet;
+			};
+			name = Debug;
+		};
+		2F50B8C12892600500A69B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6JMV7B5M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qualson.test-rn.FitpetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitpet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F50B88A2892600300A69B64 /* Build configuration list for PBXProject "Fitpet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F50B8B72892600500A69B64 /* Debug */,
+				2F50B8B82892600500A69B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F50B8B92892600500A69B64 /* Build configuration list for PBXNativeTarget "Fitpet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F50B8BA2892600500A69B64 /* Debug */,
+				2F50B8BB2892600500A69B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F50B8BC2892600500A69B64 /* Build configuration list for PBXNativeTarget "FitpetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F50B8BD2892600500A69B64 /* Debug */,
+				2F50B8BE2892600500A69B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F50B8BF2892600500A69B64 /* Build configuration list for PBXNativeTarget "FitpetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F50B8C02892600500A69B64 /* Debug */,
+				2F50B8C12892600500A69B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F50B8872892600300A69B64 /* Project object */;
+}
